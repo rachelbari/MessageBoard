@@ -1,0 +1,9 @@
+<div class = "col-md-8 col-md-offset-2">
+	<h1>Messages tagged as "<%= @tag.name %>"</h1>
+
+	<ul>
+	  <% @tag.messages.each do |message| %>
+	    <li><%= link_to message.title, message_path(message) %></li>
+	  <% end %>
+	</ul>
+</div>
