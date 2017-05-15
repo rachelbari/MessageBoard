@@ -7,7 +7,10 @@ end
 
 
 gem 'rails', '~> 5.0.2'
-gem 'sqlite3'
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', group: :development # Added development group.
+gem 'pg', group: :production # Added postgres and made it production only.
+gem 'rails_12factor'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form', '~> 3.4'
