@@ -9,8 +9,6 @@ class MessagesController < ApplicationController
 	def show
 	end
 
-
-
 	def new
 		@message = current_user.messages.build
 	end
@@ -25,7 +23,6 @@ class MessagesController < ApplicationController
 	end
 
 	def edit
-
 	end
 
 	def update
